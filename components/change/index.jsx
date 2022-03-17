@@ -1,7 +1,7 @@
 import React from 'react'
 import { useMoralis } from 'react-moralis'
 
-const ChangeUsername = () => {
+const ChangeUsername = ({ children }) => {
   const { setUserData, isUserUpdating, userError, user } = useMoralis()
 
   const setUsername = () => {
@@ -14,15 +14,13 @@ const ChangeUsername = () => {
   }
 
   return (
-    <div className="absolute top-5 right-5 text-sm">
-      <button
-        onClick={setUsername}
-        disabled={isUserUpdating}
-        className="hover:text-black"
-      >
-        Change username
-      </button>
-    </div>
+    <button
+      onClick={setUsername}
+      disabled={isUserUpdating}
+      className="hover:text-black"
+    >
+      {children}
+    </button>
   )
 }
 

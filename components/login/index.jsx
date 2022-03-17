@@ -5,28 +5,20 @@ import Image from 'next/image'
 const Login = () => {
   const { authenticate } = useMoralis()
   return (
-    <div className="relative bg-black text-white">
-      <h1>I am the login screen</h1>
-      <div className="absolute z-50 flex h-4/6 w-full flex-col items-center justify-center space-y-4">
-        <Image
-          className="rounded-full object-cover"
-          src="https://links.papareact.com/3pi"
-          height={200}
-          width={200}
-        />
-        <button
-          onClick={authenticate}
-          className="animate-pulse rounded-lg bg-yellow-500 p-5 font-bold text-black"
-        >
-          Login to the METAVERSE
-        </button>
-      </div>
-      <div className="h-screen w-full">
-        <Image
-          src="https://links.papareact.com/55n"
-          layout="fill"
-          objectFit="cover"
-        />
+    <div className="flex h-screen w-full items-center justify-center bg-blue-100">
+      <div className="w-6/12 space-y-10 rounded-xl bg-white p-10 shadow-2xl">
+        <div className="flex flex-col items-center">
+          <p className="text-2xl font-bold">CHAT DAPP для Тюленчат</p>
+          <p>(надеюсь Али хорошо сдал экономику)</p>
+        </div>
+        <div className="flex justify-center">
+          <button
+            onClick={authenticate}
+            className="animate-bounce rounded-lg bg-purple-600 py-3 px-20 font-bold text-white shadow-xl"
+          >
+            Login
+          </button>
+        </div>
       </div>
     </div>
   )

@@ -34,18 +34,19 @@ const SendMessage = ({ endOfMessagesRef }) => {
   }
 
   return (
-    <form className="fixed bottom-10 flex w-11/12 max-w-2xl space-x-5 rounded-full bg-black px-6 py-4 opacity-80 shadow-xl">
+    <form className="fixed bottom-10 flex w-11/12 max-w-2xl space-x-3">
       <input
         type="text"
-        className="flex-grow bg-transparent text-white outline-none"
-        placeholder="Enter a message"
+        className="w-full rounded-lg border-2 border-purple-700 py-2 px-3 outline-none"
+        placeholder="Write a message..."
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
+
       <button
         type="submit"
         onClick={sendMessage}
-        className="font-bold text-yellow-500"
+        className="rounded-lg bg-purple-700 px-7 font-bold text-white hover:bg-purple-600"
       >
         Send
       </button>

@@ -21,8 +21,6 @@ const Messages = () => {
     { live: true }
   )
 
-  console.log(data)
-
   return (
     <div className="pb-56">
       <div className="my-5">
@@ -40,7 +38,7 @@ const Messages = () => {
         <SendMessage endOfMessagesRef={endOfMessagesRef} />
       </div>
       <div ref={endOfMessagesRef} className="mt-5 text-center text-gray-400">
-        <p>You're up to date {user.getUsername()}! 🥳</p>
+        <p> </p>
       </div>
     </div>
   )

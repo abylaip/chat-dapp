@@ -9,9 +9,9 @@ const Home = () => {
   if (!isAuthenticated) return <Login />
 
   return (
-    <div className="h-screen overflow-hidden overflow-y-scroll bg-gradient-to-b from-pink-400 to-fuchsia-800">
+    <div className="h-screen overflow-hidden overflow-y-scroll bg-blue-100">
+      <Header />
       <div className="container">
-        <Header />
         <Messages />
       </div>
     </div>
