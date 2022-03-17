@@ -3,7 +3,7 @@ import { ByMoralis, useMoralis, useMoralisQuery } from 'react-moralis'
 import SendMessage from '../send'
 import Message from '../message'
 
-const MINS_DURATION = 15
+const MINS_DURATION = 240
 
 const Messages = () => {
   const { user } = useMoralis()
