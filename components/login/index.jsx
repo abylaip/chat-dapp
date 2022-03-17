@@ -8,8 +8,7 @@ const Login = () => {
     <div className="flex h-screen w-full items-center justify-center bg-blue-100">
       <div className="w-6/12 space-y-10 rounded-xl bg-white p-10 shadow-2xl">
         <div className="flex flex-col items-center">
-          <p className="text-2xl font-bold">CHAT DAPP для Тюленчат</p>
-          <p>(надеюсь Али хорошо сдал экономику)</p>
+          <p className="text-2xl font-bold">CHAT DAPP</p>
         </div>
         <div className="flex justify-center">
           <button
